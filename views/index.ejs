@@ -1,0 +1,60 @@
+<%- include('./header.ejs')%>
+
+
+  <div class="container my-2">
+
+    <div class="card">
+      <div class="card-header">
+        <div class="row">
+          <div class="col-md-9">
+            <h3>Inventory Management</h3>
+          </div>
+          <div class="col-md-3 offset-md-12">
+            <!-- Trigger Button -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#inventoryModal">
+              Add Inventory Item
+            </button>
+
+          </div>
+
+
+        </div>
+      </div>
+      <div class="card-content">
+        <div class="card-body">
+          <div class="table-responsive">
+            <table id="datatable" class="table ">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Category</th>
+                  <th>Price</th>
+                  <th>Tax Rate(%)</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+   
+  </div>
+
+  <%- include('./inventory/new-inventory.ejs')%>
+  <%- include('./inventory/edit-inventory.ejs')%>
+  <%- include('./inventory/delete-inventory.ejs')%>
+
+
+ 
+  <%- include('./footer.ejs')%>
+
+ 
+      <script src="js/index.js"></script>

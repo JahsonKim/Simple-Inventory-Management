@@ -1,0 +1,106 @@
+<!-- Bootstrap XL Modal -->
+<div class="modal fade" id="inventoryModalEdit" tabindex="-1" aria-labelledby="inventoryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <form id="form-edit-inventory">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="inventoryModalLabel">Edit Inventory Item</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" class="form-control" id="productID" name="productID" required>
+                    
+                    <div class="row">
+                        <!-- Name -->
+                        <div class="col-md-4 mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+
+                        <!-- Description -->
+                        <div class="col-md-4 mb-3">
+                            <label for="description" class="form-label">Description</label>
+                            <textarea class="form-control" id="description" name="description" rows="1"></textarea>
+                        </div>
+
+                        <!-- Brand -->
+                        <div class="col-md-4 mb-3">
+                            <label for="brand" class="form-label">Brand</label>
+                            <input type="text" class="form-control" id="brand" name="brand" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- Quantity in Stock -->
+                        <div class="col-md-4 mb-3">
+                            <label for="quantityInStock" class="form-label">Quantity in Stock</label>
+                            <input type="number" class="form-control" id="quantityInStock" name="quantityInStock"
+                                min="0" required>
+                        </div>
+
+                        <!-- Price -->
+                        <div class="col-md-4 mb-3">
+                            <label for="price" class="form-label">Price</label>
+                            <input type="number" class="form-control" id="price" name="price" min="0" step="0.01"
+                                required>
+                        </div>
+
+                        <!-- Tax Rate -->
+                        <div class="col-md-4 mb-3">
+                            <label for="taxRate" class="form-label">Tax Rate (%)</label>
+                            <input type="number" class="form-control" id="taxRate" name="taxRate" min="0" max="100"
+                                step="0.01" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- Batch Number -->
+                        <div class="col-md-4 mb-3">
+                            <label for="batchNumber" class="form-label">Batch Number</label>
+                            <input type="text" class="form-control" id="batchNumber" name="batchNumber" required>
+                        </div>
+
+                        <!-- Expires On -->
+                        <div class="col-md-4 mb-3">
+                            <label for="expiresOn" class="form-label">Expires On</label>
+                            <input type="date" class="form-control" id="expiresOn" name="expiresOn">
+                        </div>
+
+                        <!-- Category -->
+                        <div class="col-md-4 mb-3">
+                            <label for="category" class="form-label">Category</label>
+                            <select class="form-select" id="category" name="category" required>
+                                <option value="">Select a category</option>
+                                <option value="Electronics">Electronics</option>
+                                <option value="Clothing">Clothing</option>
+                                <option value="Furniture">Furniture</option>
+                                <option value="Toys">Toys</option>
+                                <option value="Food Stuffs">Food Stuffs</option>
+                               
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- Stock Status -->
+                        <div class="col-md-4 mb-3">
+                            <label for="stockStatus" class="form-label">Stock Status</label>
+                            <select class="form-select" id="stockStatus" name="stockStatus" required>
+                                <option value="">Select stock status</option>
+                                <option value="In Stock">In Stock</option>
+                                <option value="Out of Stock">Out of Stock</option>
+                                <option value="Backordered">Backordered</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Update</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
