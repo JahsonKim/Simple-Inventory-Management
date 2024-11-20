@@ -2,7 +2,6 @@
 
 
   <div class="container my-2">
-
     <div class="card">
       <div class="card-header">
         <div class="row">
@@ -13,11 +12,8 @@
             <!-- Trigger Button -->
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#inventoryModal">
               Add Inventory Item
-            </button>
-
-          </div>
-
-
+            </button> 
+          </div> 
         </div>
       </div>
       <div class="card-content">
@@ -45,16 +41,11 @@
 
     </div>
 
-   
+
   </div>
 
   <%- include('./inventory/new-inventory.ejs')%>
-  <%- include('./inventory/edit-inventory.ejs')%>
-  <%- include('./inventory/delete-inventory.ejs')%>
-
-
- 
-  <%- include('./footer.ejs')%>
-
- 
-      <script src="js/index.js"></script>
+    <%- include('./inventory/edit-inventory.ejs')%>
+      <%- include('./inventory/delete-inventory.ejs')%>
+        <%- include('./footer.ejs')%>
+          <script src="js/index.js"></script>
